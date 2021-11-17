@@ -1,0 +1,103 @@
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff2") format("woff2"),
+      url("Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.woff2") format("woff2"),
+      url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.woff2") format("woff2"),
+      url("Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* ROOT */
+:root {
+  --outline-color: #0A775F;
+  --text-color: #000;
+  --text-font: font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: var(--text-font);
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* OUTLINE STYLES */
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 2px;
+}
+
+
+/* BUTTON */
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN */
+.main-content {
+  flex-grow: 1;
+}
