@@ -251,7 +251,7 @@ img {
 
 .information {
   margin: 0px 20px 20px;
-  background-color: #c99b67;
+  background-image: linear-gradient(to bottom, #c99b67 70%, transparent 70%);
   padding: 50px 0;
 }
 
